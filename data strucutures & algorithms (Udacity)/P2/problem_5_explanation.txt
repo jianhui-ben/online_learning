@@ -1,0 +1,14 @@
+time complexity: O(n * m) space complexity: O(n * m)
+
+N denotes the number of inputs, while m denotes the average length of inputs
+Because this trie will store and search all the inputs based on their character, the time 
+complexity and space complexity are related to both n and m
+
+Idea: 
+
+Each TrieNode is composed of is_word and the children dictionary.
+In insertion, we split the word into characters and traverse the trie via checking characters in each
+TrieNode.
+In find_suffix function, we find the TrieNode of the prefix and then save all the combination of characters
+if they hits the is_word.
+

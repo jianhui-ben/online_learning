@@ -1,0 +1,32 @@
+task 0: 
+worst case complexity: O(1)
+algorithm: find the first item in a list O(1); find the number and time of that item O(1); 
+	   find the last item in a list O(1); find the number and time of that item O(1); 
+
+
+task 1: 
+worst case complexity: O(n)
+algorithm: map all record in call O(n); get calling number and receiving number in this record O(1);
+	   map all record in texts O(n); get calling number and receiving number in this record O(1);
+
+task 2: 
+worst case complexity: O(n log n)
+algorithm: map all records in call O(n); get duration for each calling number and receiving number O(1); initilize an empty dict O(1);
+	   add the duration to the existing record in the dictionary O(1); sort the total duration O(n log n);
+
+task 3: 
+A: complexity O(n log n)
+algorithm: map all the numbers in the call and find all with '080' head code O(n); for each receiving number 
+get the head code through custom function O(1); find unique numbers and sort them O(n log n)
+
+
+B complexity: O(n)
+algorithm: map all the numbers in the call and find all with '080' head code O(n); calculate the length of the list O(1);
+	   map all the receiving numbers in the list and find all with '080' head code O(n); calculate the length of the sublist O(1);
+	   calculate the percentage by dividing two lengths O(1)
+
+
+task 4: O(n log n)
+algorithm: map all the calling numbers in the call called list1 O(n); 
+	   map all the numbers which received the calls or texts or sent texts called list2 O(n);
+	   use numpy to find difference of these two lists O(n log n)

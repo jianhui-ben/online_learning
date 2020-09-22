@@ -1,0 +1,10 @@
+The blockchain is like a linked list. I use the list to represent it.
+
+1, define each Block class to contain index, timestamp, data, current hash and previous hash.
+2, the hash is calculated by the the index, timestamp, data and previous hash of the current Block
+3, use append function of the list to acheieve the linking function of the block chain
+4, define a next_block function to travese the block chain
+
+time complexity: O(1), because getting index increment, new time stamp, loading data and previous hash
+and calulating new hash information are all O(1).
+space complexity: O(n), becuase the size of linked list is linearly affected by the number of blocks

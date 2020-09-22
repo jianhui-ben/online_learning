@@ -1,0 +1,17 @@
+
+
+get function: retrieve item from provided key. Return -1 if nonexistent
+1, if the key is in self.dic, change the appearing order of this key.
+2, remove the key from the 'self.used'
+3, append the key into the 'self.used'
+4, return the value of the key in the self.dict, otherwise -1
+
+time complexity: O(1), because getting values given the keys in a dictionary is O(1)
+space complexity: O(n)
+
+set function:Set the value if the key is not present in the cache. If the cache is at capacity remove the oldest item.
+1, if capacity is enough, directly add the key value pair into the dictionary
+2, otherwise, pop the oldest item form the self.used
+3, then add the key value pair into the self.dic and self.used
+
+time complexity: O(1); space complexity: O(n)

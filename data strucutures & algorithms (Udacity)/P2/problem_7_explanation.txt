@@ -1,0 +1,13 @@
+time complexity is O(n * m); space complexity is O(n * m)
+
+N denotes the number of paths, while m denotes the average length or the average number 
+of sub-directories for these paths stored in RouteTrie.
+Because this RouteTrie will store and search all the inputs based on their sub-directories, the time 
+complexity and space complexity are related to both n and m
+
+
+Each RouteTrieNode is composed of two attributes: handler and the children dictionary.
+The RouteTrie is composed of RouteTrieNode. The insert will store the name of subdirectory as
+the name of the children dictionary in the RouteTrieNode, similar to Trie for the auto-complete.
+Find function will traverse the whole RouteTrie based on the given path and then check the handler at
+the current RouteTrieNode.

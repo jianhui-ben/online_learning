@@ -1,0 +1,12 @@
+I used the recursion to continuously check the path and sub-directories
+
+1, initiate an empty list called 'l_path'
+2, open the path and save all the file names into another list called all_path
+3, traverse the all_path and check if the element is a file and the name contains suffic required
+4, if true, save the the combination of the filename and previous path into 'l_path'
+5, if the element is a sub-directory, recursively call the find_files function on the sub-directory
+6, return the l_path
+
+time complexity: O(n), because the algorithm traverses through all files under the path and checks if
+the name contains the suffic
+space complexity: O(n), because the algorithm stores each matched file path into the list.

@@ -1,0 +1,5 @@
+time complexity is O(n log n); space complexity is O(n)
+
+I convert the whole array into a max heap. Then I pop the head or the maximum integer from the maxheap O(1)
+and then heapify the array O(log n). I store the result into two strings and then convert them into two
+integers.

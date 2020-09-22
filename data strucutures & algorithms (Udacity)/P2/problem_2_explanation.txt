@@ -1,0 +1,5 @@
+Time complexity: O(log n); space complexity is O(log n) due to binary search nature
+
+idea: use binary search to find the rotation index, and then check if the target number is
+before or after the rotation index. Then run binary search to find the index of target number
+on either the first or second half of the sortter array.

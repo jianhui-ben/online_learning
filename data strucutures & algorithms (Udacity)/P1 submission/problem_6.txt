@@ -1,0 +1,25 @@
+In order to compare the values between two linked lists, I want to use the hashmap to store the unique value in one list, and then compare
+with the second list:
+
+Union:
+1, edge case: if either one list is empty, return the other
+2, save all the values in the list1 into a dictionary 'dic1'
+3, save all the unique values of the dic1 in the output list 'out'
+4, traverse the list2; save visited node into another dictionary 'dic2';
+5, if the element in the list2 is in neither 'dic1' nor 'dic2', append it into the 'out'
+6, return the 'out'
+
+time complexity: O(n), it needs to traverse two lists and visit every nnumber on them.
+space complexity: O(n), two dictionary are created to quickly check if the current number is visited before;
+the size of dictionary is linearly correlated to the size of two lists
+
+
+intersection:
+1, edge case: if either one list is empty, return the other
+2, save all the unique values in the list1 into a dictionary 'dic1'
+3, traverse the list2; save visited node into another dictionary 'dic2';
+5, if the element in the list2 visited is in 'dic1' but not in 'dic2', append it into an otput list called 'out'
+6, return the 'out'
+
+time complexity: O(n)
+space complexity: O(n)  same reason as above

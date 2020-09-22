@@ -1,0 +1,27 @@
+I use a priority queue to save the huffman tree.
+
+
+Encoding:
+1, add the elements of data and their frequencies into a list called 'freq_list'
+2, create a priority queue using queue package 'q'
+3, create a leaf node for each symbol, and then add it to the priortiy queue
+4, While there is more than one node, remove two highest nodes
+5, create internal node with children, and add new node to queue
+6, define a depth-first search 'dfs' method that traverses the tree and gets the code for each leaf node
+7, run the 'dfs' function and add all codes of leaf nodes into an empty string 'out'
+8, return out
+
+time complexity: O(n log n),because the removal of two largest elements in priority queue is O(log n), and
+the whole tree will be re-built if a new element is input. So overall complexity is O(n log n).
+Space complexity: O(n), for each additional value in the input data, we need additional space
+in the frequency list, dictionary and priority queue (tree). The increase in memory should be linear
+to the size of the data.
+
+
+Decoding:
+1, traverse the tree using the depth-first order
+2, save all the leaf nodes' values into an empty string 'out'
+3, return out
+
+time complexity: O(n log n). same reason as above
+space complexity: O(n), becuase the algorithn changes the out and node vairable in every iteration.

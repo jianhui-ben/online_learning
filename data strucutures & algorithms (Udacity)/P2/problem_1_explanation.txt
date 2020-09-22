@@ -1,0 +1,10 @@
+
+Time complexity is O(log n)； space complexity is O(log n) due to the binary search nature
+
+1, recursion:
+
+1) base case: if n*n is smaller than the target number and n+1 * n+1 is greater than the target number,
+return the n
+
+2) if not, then use binary search to check for new n, which is at mid point between the 1 and the target
+number, because we know n must be between 1 and the target number

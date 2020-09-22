@@ -1,0 +1,5 @@
+time complexity is O(n), space complexity is O(1)
+
+1, define max and min to be the first number in the array
+2, traverse the array; if the current value is smaller than min, then replace min with this number;
+if the current value is greater than max, then replace max with this number

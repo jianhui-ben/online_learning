@@ -1,0 +1,12 @@
+For each Group class, there are two attributes: sub-group and users. I used a recursion to check if a user is in the group or 
+its sub-groups.
+
+1, check if the user is in the 'user' attribute in the group; if it is, return True
+2, if not, for each sub-group of the group, run the function recrusively.
+3, if none of the subgroups match, return False 
+
+time complexity:worst case O(n), on average O(log n). In the worst case, it traverses every single user of the current group
+and each of the sub-groups and checks if the user exists. On average, if it finds the user, the algorithm stops and returns
+the boolean result.
+
+space complexity: O(n)
